@@ -172,14 +172,14 @@ app.post('/checklotto', function (req, response) {
             }
 
             for (var j = 0; j < 50; j++) {
-                if (tmp[i] === json['third-prize'][j + 1]) {
+                if (tmp[i] === json['four-prize'][j + 1]) {
                     textAns += "หมายเลข : " + tmp[i] + " ถูกรางวัลที่ 4 รางวัลละ 40,000 บาท\n";
                     check = false;
                 }
             }
 
             for (var j = 0; j < 100; j++) {
-                if (tmp[i] === json['third-prize'][j + 1]) {
+                if (tmp[i] === json['five-prize'][j + 1]) {
                     textAns += "หมายเลข : " + tmp[i] + " ถูกรางวัลที่ 5 รางวัลละ 20,000 บาท\n";
                     check = false;
                 }
